@@ -1,0 +1,1477 @@
+@charset "UTF-8";
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * * 1. Change the default font family in all browsers (opinionated).
+ * * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ * */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/**
+ * * Remove the margin in all browsers (opinionated).
+ * */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+ * ========================================================================== */
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**
+ * * Add the correct display in IE 9-.
+ * */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * * Add the correct display in iOS 4-7.
+ * */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ * */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * * Add the correct display in IE 10-.
+ * * 1. Add the correct display in IE.
+ * */
+[hidden] {
+  display: none;
+}
+
+/* Links
+ * ========================================================================== */
+/**
+ * * 1. Remove the gray background on active links in IE 10.
+ * * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ * */
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+/**
+ * * Remove the outline on focused links when they are also active or hovered
+ * * in all browsers (opinionated).
+ * */
+a:active, a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+ * ========================================================================== */
+/**
+ * * 1. Remove the bottom border in Firefox 39-.
+ * * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ * */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+ * * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ * */
+b, strong {
+  font-weight: inherit;
+}
+
+/**
+ * * Add the correct font weight in Chrome, Edge, and Safari.
+ * */
+b, strong {
+  font-weight: bolder;
+}
+
+/**
+ * * Add the correct font style in Android 4.3-.
+ * */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * * Correct the font size and margin on `h1` elements within `section` and
+ * * `article` contexts in Chrome, Firefox, and Safari.
+ * */
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  font-size: 0;
+}
+
+/**
+ * * Add the correct background and color in IE 9-.
+ * */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * * Add the correct font size in all browsers.
+ * */
+small {
+  font-size: 80%;
+}
+
+/**
+ * * Prevent `sub` and `sup` elements from affecting the line height in
+ * * all browsers.
+ * */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+ * ========================================================================== */
+/**
+ * * Remove the border on images inside links in IE 10-.
+ * */
+img {
+  border-style: none;
+}
+
+/**
+ * * Hide the overflow in IE.
+ * */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+ * ========================================================================== */
+/**
+ * * 1. Correct the inheritance and scaling of font size in all browsers.
+ * * 2. Correct the odd `em` font sizing in all browsers.
+ * */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/**
+ * * Add the correct margin in IE 8.
+ * */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * * 1. Add the correct box sizing in Firefox.
+ * * 2. Show the overflow in Edge and IE.
+ * */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* Forms
+ * ========================================================================== */
+/**
+ * * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * * 2. Remove the margin in Firefox and Safari.
+ * */
+button, input, select, textarea {
+  font: inherit;
+  margin: 0;
+}
+
+/**
+ * * Restore the font weight unset by the previous rule.
+ * */
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * * Show the overflow in IE.
+ * * 1. Show the overflow in Edge.
+ * */
+button, input {
+  overflow: visible;
+}
+
+/**
+ * * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * * 1. Remove the inheritance of text transform in Firefox.
+ * */
+button, select {
+  text-transform: none;
+}
+
+/**
+ * * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ * *    controls in Android 4.
+ * * 2. Correct the inability to style clickable types in iOS and Safari.
+ * */
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * * Remove the inner border and padding in Firefox.
+ * */
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * * Restore the focus styles unset by the previous rule.
+ * */
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * * Change the border, margin, and padding in all browsers (opinionated).
+ * */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * * 1. Correct the text wrapping in Edge and IE.
+ * * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * * 3. Remove the padding so developers are not caught out when they zero out
+ * *    `fieldset` elements in all browsers.
+ * */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/**
+ * * Remove the default vertical scrollbar in IE.
+ * */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * * 1. Add the correct box sizing in IE 10-.
+ * * 2. Remove the padding in IE 10-.
+ * */
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/**
+ * * Correct the cursor style of increment and decrement buttons in Chrome.
+ * */
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * * 1. Correct the odd appearance in Chrome and Safari.
+ * * 2. Correct the outline style in Safari.
+ * */
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/**
+ * * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ * */
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ * */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * * 1. Correct the inability to style clickable types in iOS and Safari.
+ * * 2. Change font properties to `inherit` in Safari.
+ * */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+@font-face {
+  font-family: "Merriweather", sans-serif;
+  src: url("../fonts/Merriweather/Merriweather-Bold.eot");
+  src: local("☺"), url("fonts/Merriweather-Bold.woff") format("woff"), url("fonts/Merriweather-Bold.ttf") format("truetype"), url("fonts/Merriweather-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merriweather", sans-serif;
+  src: url("../fonts/Merriweather/Merriweather-Regular.eot");
+  src: local("☺"), url("fonts/Merriweather-Regular.woff") format("woff"), url("fonts/Merriweather-Regular.ttf") format("truetype"), url("fonts/Merriweather-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("../fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("../fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url("../fonts/Raleway/Raleway-Medium.eot");
+  src: local("☺"), url("fonts/Raleway-Medium.woff") format("woff"), url("fonts/Raleway-Medium.ttf") format("truetype"), url("fonts/Raleway-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url("../fonts/Raleway/Raleway-Regular.eot");
+  src: local("☺"), url("fonts/Raleway-Regular.woff") format("woff"), url("fonts/Raleway-Regular.ttf") format("truetype"), url("fonts/Raleway-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper__content {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background: #eff0f2;
+  width: 100%;
+  padding: 26px 0;
+}
+
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  width: 113px;
+  border: 6px solid #170f1c;
+}
+.logo p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  transition: 0.2s;
+  color: #000000;
+}
+.logo p span {
+  font-size: 32px;
+  color: #77efe5;
+}
+
+.menu__burger {
+  display: block;
+  width: 30px;
+  height: 20px;
+}
+.menu__burger .line__menu {
+  display: block;
+  background: #606061;
+  width: 30px;
+  height: 4px;
+}
+.menu__burger .line__menu:nth-child(2) {
+  margin: 5px 0;
+}
+
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #eff0f2;
+  max-height: 1000px;
+}
+.offer__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.offer__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 5rem 0 13rem 0;
+}
+.offer__title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #505050;
+  text-shadow: 4px 7px 10px #00000099;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+.offer__title .up {
+  background: #b0efeb;
+  padding: 3px 12px;
+  transition: 0.3s;
+  position: relative;
+  animation-name: span__up;
+  animation-duration: 1s;
+}
+.offer__title .up:hover {
+  background: #577fb4;
+  color: #ffffff;
+  transition: 0.5s;
+  padding-right: 35px;
+}
+.offer__title .down {
+  background: #b0efeb;
+  padding: 3px 9px;
+  transition: 0.3s;
+  position: relative;
+  animation-name: span__down;
+  animation-duration: 1s;
+}
+.offer__title .down:hover {
+  background: #577fb4;
+  color: #ffffff;
+  transition: 0.5s;
+  padding-left: 35px;
+}
+
+.offer__title__pice__one {
+  margin-bottom: 10px;
+  animation-name: title__up;
+  animation-duration: 1s;
+}
+
+.offer__title__pice__two {
+  animation-name: title__down;
+  animation-duration: 1s;
+}
+
+.offer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 232px;
+  height: 52px;
+  border: 1px solid #777879;
+  border-radius: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #3c3c3d;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 0 10rem 0;
+}
+.offer__link:hover {
+  background: #777879;
+  color: #f5f5f5;
+  font-weight: 700;
+}
+
+@keyframes title__up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes title__down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes span__up {
+  0% {
+    right: -300px;
+    opacity: 0;
+  }
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+@keyframes span__down {
+  0% {
+    right: 300px;
+    opacity: 0;
+  }
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+.juice__content {
+  position: relative;
+}
+
+.juice {
+  right: 90px;
+  top: -175px;
+  position: absolute;
+  z-index: 1;
+  animation-name: juice;
+  animation-duration: 1.5s;
+}
+.juice img {
+  width: 100px;
+}
+
+.footer__juice {
+  top: -160px;
+  right: 120px;
+  position: relative;
+  position: absolute;
+}
+
+@keyframes juice {
+  0% {
+    right: -100px;
+    opacity: 0;
+    transition-delay: 1s;
+  }
+  100% {
+    right: 90px;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 615px) {
+  .juice__content {
+    display: none;
+  }
+}
+.info {
+  background: #f9fbfb;
+}
+
+.info__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__body__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 6rem 0;
+}
+
+.info__title {
+  text-align: center;
+}
+.info__title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #181919;
+  font-size: 38px;
+}
+
+.info__text h3 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  color: #5e5f5f;
+  font-size: 18px;
+}
+
+.info__body__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  width: 1140px;
+  margin-bottom: 6rem;
+}
+
+.info__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__img__ceil {
+  width: 390px;
+  height: 480px;
+  overflow: hidden;
+  box-shadow: 0px 0px 49px -16px black;
+}
+
+.img__ceil {
+  background: url("../img/3__info/Img__info.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.click__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.click__info i {
+  display: block;
+  background: #d0d0d0;
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-right: 5px;
+}
+.click__info i:hover {
+  background: #71f6eb;
+}
+
+.info__p {
+  display: flex;
+  flex-direction: column;
+}
+.info__p h3 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  color: #3e3f3f;
+  font-size: 20px;
+  margin: 0.5rem 0 0.5rem 0;
+  text-transform: uppercase;
+}
+.info__p p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #636464;
+  font-size: 16px;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.table__body__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 6rem 0 6rem 0;
+}
+
+.table__title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #191919;
+  font-size: 38px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.table__text h3 {
+  font-family: "Merriweather";
+  font-weight: 400;
+  color: #616161;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.table__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.table__item {
+  margin: 1.5px 3.5px;
+}
+
+.services {
+  background: #f9fbfb;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.body__services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body__services__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 0 6rem 0;
+}
+
+.services__title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #191919;
+  font-size: 38px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.services__text h3 {
+  font-family: "Merriweather";
+  font-weight: 400;
+  color: #616161;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.services__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services__item .services__ceil {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.services__item h3 {
+  font-family: "Merriweather";
+  font-weight: 700;
+  color: #f7f7f7;
+  font-size: 20px;
+  margin-top: 5rem;
+  text-transform: uppercase;
+  text-align: start;
+}
+.services__item p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #cacaca;
+  font-size: 16px;
+  width: 24rem;
+  line-height: 24px;
+  text-align: start;
+  margin: 1rem 0 2rem 0;
+}
+
+.ser_item_1 {
+  background: #71f6eb;
+  display: flex;
+  flex-direction: column;
+  height: 368px;
+  width: 652px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+.ser_item_1 h3 {
+  font-family: "Merriweather";
+  font-weight: 700;
+  color: #132928;
+  font-size: 20px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.ser_item_1 p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #1b3d39;
+  font-size: 16px;
+  width: 32rem;
+  line-height: 24px;
+  text-align: start;
+}
+.ser_item_1 i {
+  font-size: 2rem;
+  color: #44948d;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.ser_item_1 i:hover {
+  color: #31706b;
+}
+
+.ser_item_2 {
+  background: #646464 url("../img/5_services/2.jpg");
+  background-repeat: no-repeat;
+  height: 368px;
+  width: 422px;
+  margin-bottom: 1rem;
+}
+
+.ser_item_3 {
+  background: #646464 url("../img/5_services/3.jpg");
+  background-repeat: no-repeat;
+  height: 368px;
+  width: 652px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+.ser_item_3 .services__ceil {
+  width: 32rem;
+}
+
+.ser_item_4 {
+  background: #646464 url("../img/5_services/4.jpg");
+  background-repeat: no-repeat;
+  height: 368px;
+  width: 422px;
+  margin-bottom: 1rem;
+}
+
+.ser_item_5 {
+  background: #646464 url("../img/5_services/5.jpg");
+  background-repeat: no-repeat;
+  height: 368px;
+  width: 422px;
+  margin-right: 1rem;
+}
+
+.ser_item_6 {
+  background: #646464 url("../img/5_services/6.jpg");
+  background-repeat: no-repeat;
+  height: 368px;
+  width: 652px;
+}
+.ser_item_6 .services__ceil {
+  width: 32rem;
+}
+
+.services__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services__link a {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #cacaca;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: 0.2s;
+}
+.services__link a:hover {
+  color: #aaaaaa;
+}
+.services__link i {
+  display: block;
+  color: #cacaca;
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+  top: -4px;
+  transition: 0.2s;
+}
+.services__link i:hover {
+  color: #aaaaaa;
+}
+
+.team {
+  background: #ffffff;
+}
+
+.body__team__title {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.body__team__title .team__title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #191919;
+  font-size: 38px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.body__team__title .team__text h3 {
+  font-family: "Merriweather";
+  font-weight: 400;
+  color: #616161;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.container__team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background: #6ff6eb;
+  height: 240px;
+  width: 335px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.message__ceil__two {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.message__triangle {
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #6ff6eb;
+}
+
+.message__title {
+  display: flex;
+}
+.message__title h1 {
+  font-family: "Merriweather";
+  font-weight: 700;
+  color: #132928;
+  font-size: 20px;
+}
+.message__title h3 {
+  display: flex;
+  align-items: flex-end;
+  font-family: "Raleway";
+  font-weight: 400;
+  color: #1b3d39;
+  font-size: 16px;
+}
+
+.message__text p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #16312f;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  line-height: 24px;
+}
+
+.message__icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.message__icons .icon {
+  margin-right: 10px;
+}
+.message__icons .icon .fa-facebook-f, .message__icons .icon .fa-twitter, .message__icons .icon .fa-basketball-ball, .message__icons .icon .fa-envelope {
+  color: #214946;
+  font-size: 10px;
+}
+
+.item__team {
+  background-repeat: no-repeat;
+}
+
+.it1 {
+  background: url("../img/6_team/1.jpg");
+  width: 370px;
+  height: 440px;
+}
+
+.it2 {
+  background: url("../img/6_team/2.jpg");
+  width: 370px;
+  height: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.it3 {
+  background: url("../img/6_team/3.jpg");
+  width: 370px;
+  height: 440px;
+}
+
+.it4 {
+  background: url("../img/6_team/4.jpg");
+  width: 370px;
+  height: 440px;
+}
+
+.it5 {
+  background: url("../img/6_team/5.jpg");
+  width: 370px;
+  height: 440px;
+}
+
+.it6 {
+  background: url("../img/6_team/6.jpg");
+  width: 370px;
+  height: 440px;
+}
+
+.autor {
+  background: #f9fbfb;
+}
+
+.autor__body__title {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+.autor__title {
+  display: flex;
+  margin: 6rem 0 10px 0;
+}
+.autor__title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #191919;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+.autor__text h3 {
+  font-family: "Merriweather";
+  font-weight: 400;
+  color: #616161;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+
+.container__autor {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 6rem;
+}
+
+.autor__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.autor__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.autor__img__ceil {
+  width: 370px;
+  height: 440px;
+  overflow: hidden;
+  box-shadow: 0px 0px 49px -16px black;
+}
+
+.autor__ceil {
+  background: url("../img/7_autor/3.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.click__autor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.click__autor i {
+  display: block;
+  background: #d0d0d0;
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-right: 5px;
+}
+.click__autor i:hover {
+  background: #71f6eb;
+}
+
+.autor__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #eaebed;
+  height: 362px;
+  width: 665px;
+  text-align: center;
+}
+
+.autor__right__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.autor__right__title h2 {
+  font-family: "Merriweather";
+  font-weight: 700;
+  color: #0c0c0c;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.autor__right__title h3 {
+  font-family: "Merriweather";
+  font-weight: 400;
+  color: #7e7e7e;
+  font-size: 15px;
+  font-style: italic;
+  text-transform: uppercase;
+  display: flex;
+  align-items: flex-end;
+}
+
+.autor__right__text {
+  margin: 1rem 0;
+}
+.autor__right__text p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #616161;
+  font-size: 17px;
+}
+
+.stars .star {
+  color: #f2da3b;
+}
+
+.controller__autor {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+}
+.controller__autor .controller__autor__prev a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  color: #b2b2b2;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 3px;
+  transition: 0.2s;
+  box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.3);
+}
+.controller__autor .controller__autor__prev a:hover {
+  background: #71f6eb;
+  color: #25514d;
+}
+.controller__autor .controller__autor__next a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  color: #b2b2b2;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 3px;
+  margin-left: 2rem;
+  transition: 0.2s;
+  box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.3);
+}
+.controller__autor .controller__autor__next a:hover {
+  background: #71f6eb;
+  color: #25514d;
+}
+
+.brand__body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 0;
+}
+
+.brand_block_one {
+  margin-bottom: 1rem;
+}
+
+.brand_block {
+  display: flex;
+}
+
+.brand__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  height: 60px;
+  width: 130px;
+}
+.brand__item img {
+  display: block;
+}
+
+.map {
+  background: #646464 url("../img/9_map/footer.jpg");
+  background-repeat: no-repeat;
+  height: auto;
+  max-height: 1000px;
+}
+
+.map__body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+}
+.map__body .map__mail {
+  padding: 1rem;
+  background: rgba(5, 56, 77, 0.8);
+}
+.map__body .map__mail form {
+  display: flex;
+  flex-direction: column;
+}
+.map__body .map__mail .input__map input, .map__body .map__mail .input__map textarea {
+  background: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #ececec;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid #6e7a81;
+  resize: none;
+  outline: none;
+  height: 60px;
+  width: 455px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.map__body .map__mail .input__map textarea {
+  padding-top: 20px;
+  height: 120px;
+}
+.map__body .map__mail .input__send {
+  margin-top: 12.3px;
+}
+.map__body .map__mail .input__send input {
+  background: #6eeee4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #214744;
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.2s;
+  height: 50px;
+  width: 240px;
+}
+.map__body .map__mail .input__send input:hover {
+  background: #0dc4b1;
+  color: #e0fffc;
+}
+.map__body .map__info {
+  height: 430px;
+  background: rgba(5, 56, 77, 0.8);
+}
+.map__body .map__info .map__block__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+}
+.map__body .map__info .map__block__info .info__map {
+  margin: 0 0 20px 0;
+}
+.map__body .map__info .map__block__info .info__map ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.map__body .map__info .map__block__info .info__map ul li {
+  margin-bottom: 2px;
+}
+.map__body .map__info .map__block__info .info__map ul a, .map__body .map__info .map__block__info .info__map ul sup {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #ececec;
+  font-size: 15px;
+  text-decoration: none;
+}
+.map__body .map__info .map__block__info .info__map ul sup {
+  position: relative;
+  top: -2px;
+}
+.map__body .map__info .map__block__info .link__map {
+  margin: 0 0 20px 0;
+}
+.map__body .map__info .map__block__info .link__map ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.map__body .map__info .map__block__info .link__map ul a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #ececec;
+  font-size: 15px;
+  text-decoration: none;
+}
+.map__body .map__block {
+  background: rgba(69, 84, 97, 0.3) url("../img/9_map/Map.jpg");
+  width: 455px;
+  height: 224px;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background: #262b2e;
+}
+
+.footer__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.footer__title h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #d4d5d5;
+  font-size: 16px;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.footer__icons .footer__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.footer__icons .footer__icon:nth-child(4) {
+  margin-right: 0;
+}
+.footer__icons .footer__icon .fa-pinterest-p, .footer__icons .footer__icon .fa-twitter, .footer__icons .footer__icon .fa-basketball-ball, .footer__icons .footer__icon .fa-facebook-f {
+  background: #424648;
+  padding: 20px 20px;
+  width: 20px;
+  border-radius: 1px;
+  color: #abaaab;
+  font-size: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.footer__icons .footer__icon .fa-pinterest-p:hover, .footer__icons .footer__icon .fa-twitter:hover, .footer__icons .footer__icon .fa-basketball-ball:hover, .footer__icons .footer__icon .fa-facebook-f:hover {
+  background: #6eeee4;
+  color: #070e0d;
+}
+
+.footer__text p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #7d8082;
+  font-size: 16px;
+}
