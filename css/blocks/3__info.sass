@@ -26,6 +26,7 @@
         font-size: 38px
 
 .info__text
+    text-align: center
     h3
         font-family: 'Merriweather', sans-serif
         font-weight: 400
@@ -104,6 +105,40 @@
 
         margin: .5rem 0 .5rem 0
 
-        
+@media screen and ( max-width: 1024px )
+    .info__body__content
+        width: 1024px
 
+@media screen and ( max-width: 768px )
+    .info__body__content
+        flex-wrap: wrap
+        justify-content: center
+        width: 768px
+
+@media screen and ( max-width: 414px ) 
+    .info__p p 
+        font-size: 13px
         
+    .info__body__content 
+        width: 414px
+
+    .info__text h3 
+        font-size: 17px
+    
+    
+    .info__img__ceil 
+        width: 310px
+
+    .info__body__content 
+        width: 320px
+
+@media screen and (max-width: 320px)
+    .info__text h3 
+        font-size: 16px
+
+    
+    .info__img__ceil 
+        width: 295px
+
+    .info__p 
+        margin: 0 10px

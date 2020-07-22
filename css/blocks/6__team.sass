@@ -30,6 +30,7 @@
 
 .container__team
     display: flex
+    justify-content: center
     flex-wrap: wrap
     justify-self: center
     align-items: center
@@ -148,3 +149,23 @@
     background: url('../img/6_team/6.jpg')
     width: 370px
     height: 440px
+
+@media screen and ( max-width: 1024px )
+    .header__body 
+        padding: 0 20px
+
+@media screen and ( max-width: 414px )
+    .body__team__title .team__text h3 
+        font-size: 16px
+        text-align: center
+
+    .message 
+        width: 270px
+    
+    .item__team
+        width: 310px
+        background-position: 50% 50%
+
+@media screen and (max-width: 320px)
+    .item__team 
+        width: 300px

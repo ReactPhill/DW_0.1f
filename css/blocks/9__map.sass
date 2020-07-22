@@ -132,4 +132,65 @@
         height: 224px
 
         background-repeat: no-repeat
+
+@media screen and ( max-width: 768px )
+
+    .map 
+        background-repeat: repeat
+
+    .map__body
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-around
+
+    .map__mail 
+        width: 443px
+        margin-bottom: 1rem
+
+    .map__info
+        display: flex
+        justify-content: center
+        align-items: center
+
+        width: 475px
         
+@media screen and ( max-width: 414px )
+
+    .map__mail 
+        width: 360px
+        margin-bottom: 1rem
+
+
+
+    .map__info
+        display: flex
+        justify-content: center
+        align-items: center
+
+        width: 390px
+
+    .map__body .map__mail .input__map input, .map__body .map__mail .input__map textarea
+        width: 320px
+    
+    .map__body .map__block 
+        width: 383px
+    
+@media screen and ( max-width: 375px )
+
+    .map__body .map__block 
+        width: 270px
+
+    .map__info 
+        width: 300px
+
+    .map__mail 
+        width: 268px
+
+    .map__body .map__mail .input__map input, .map__body .map__mail .input__map textarea 
+        width: 260px
+    
+       
+       
+
+   

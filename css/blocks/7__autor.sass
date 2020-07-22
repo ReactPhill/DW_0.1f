@@ -21,6 +21,7 @@
         font-size: 38px
 
         text-transform: uppercase
+        text-align: center
 
 .autor__text
 
@@ -197,4 +198,33 @@
                 background: #71f6eb
                 color: #25514d  
 
+@media screen and ( max-width: 1024px )
+    .autor__right 
+        width: 520px
+
+@media screen and (max-width: 768px)
+    .autor__right 
+        width: 335px
+    .container__autor
+        display: flex
+        flex-wrap: wrap
+
+@media screen and ( max-width: 414px )
+    .autor__text h3 
+        font-size: 16px
+        text-align: center
+        
+@media screen and ( max-width: 375px )
+    .autor__img__ceil 
+        width: 320px
+
+    .autor__right 
+        width: 310px
+
+@media screen and (max-width: 320px)
+    .autor__img__ceil 
+        width: 300px
+        
+    .autor__right 
+        width: 300px
         
