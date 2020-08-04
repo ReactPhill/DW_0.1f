@@ -230,13 +230,13 @@
                             <div class="autor__left">
                                 <div class="autor__img">
                                     <div class="autor__img__ceil">
-                                        <div class="autor__ceil"></div>
+                                        <div class="autor__ceil"><img src="./img/7_autor/3.jpg" class="img_slide"></div>
                                     </div>
                                     <div class="click__info">
-                                        <i></i>
-                                        <i></i>
-                                        <i></i>
-                                        <i></i>
+                                        <i class="dot dot_active" onclick="changeIndex(0)"></i>
+                                        <i class="dot" onclick="changeIndex(1)"></i>
+                                        <i class="dot" onclick="changeIndex(2)"></i>
+                                        <i class="dot" onclick="changeIndex(3)"></i>
                                     </div>
                                 </div>
                             </div>
@@ -262,8 +262,8 @@
                                     
                                 </div>
                                 <div class="controller__autor">
-                                    <div class="controller__autor__prev"><a href="#"><</a></div>
-                                    <div class="controller__autor__next"><a href="#">></a></div>
+                                    <div class="controller__autor__prev"><button onclick="nextIndex(-1)"><</button></div>
+                                    <div class="controller__autor__next"><button onclick="nextIndex(1)">></button></div>
                                 </div>
                             </div>
                         </div>
@@ -349,6 +349,7 @@
             <!-- end-fotter -->
     </div>
 
+    <script src="./js/carousel.js"></script>
     <script src="./js/all.min.js"></script>
 </body>
 </html>
