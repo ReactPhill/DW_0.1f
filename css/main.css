@@ -677,6 +677,15 @@ textarea {
   width: 100%;
   height: 100%;
 }
+.img__ceil img {
+  height: 100%;
+  width: 100%;
+}
+
+.img__slide {
+  width: 100%;
+  height: 100%;
+}
 
 .click__info {
   display: flex;
@@ -684,7 +693,7 @@ textarea {
   align-items: center;
   margin: 1rem 0;
 }
-.click__info i {
+.click__info .dot_info {
   display: block;
   background: #d0d0d0;
   width: 9px;
@@ -694,7 +703,10 @@ textarea {
   transition: 0.2s;
   margin-right: 5px;
 }
-.click__info i:hover {
+.click__info .dot_info:hover {
+  background: #71f6eb;
+}
+.click__info .dot_active_info {
   background: #71f6eb;
 }
 
@@ -901,6 +913,7 @@ textarea {
   width: 652px;
   margin-right: 1rem;
   margin-bottom: 1rem;
+  transition-duration: 0.5s;
 }
 .ser_item_1 h3 {
   font-family: "Merriweather";
@@ -923,10 +936,12 @@ textarea {
   font-size: 2rem;
   color: #44948d;
   cursor: pointer;
-  transition: 0.2s;
 }
-.ser_item_1 i:hover {
-  color: #31706b;
+.ser_item_1:hover {
+  background: #2241c7;
+}
+.ser_item_1:hover h3, .ser_item_1:hover p, .ser_item_1:hover i {
+  color: #ffffff;
 }
 
 .ser_item_2 {
@@ -1109,6 +1124,20 @@ textarea {
   width: 335px;
   margin-bottom: 16px;
   position: relative;
+  transition-duration: 0.5s;
+}
+.message:hover {
+  background: #2241c7;
+}
+.message:hover h1, .message:hover h3, .message:hover p {
+  color: #ffffff;
+}
+.message:hover .message__triangle {
+  border-bottom: solid #2241c7;
+  top: 0px;
+}
+.message:hover .message__icons .icon .fa-facebook-f, .message:hover .message__icons .icon .fa-twitter, .message:hover .message__icons .icon .fa-basketball-ball, .message:hover .message__icons .icon .fa-envelope {
+  color: #ffffff;
 }
 
 .message__ceil__two {
@@ -1129,6 +1158,7 @@ textarea {
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   border-bottom: 50px solid #6ff6eb;
+  transition-duration: 0.5s;
 }
 
 .message__title {
@@ -1180,12 +1210,14 @@ textarea {
   background: url("../img/6_team/1.jpg");
   width: 370px;
   height: 440px;
+  margin-bottom: 10px;
 }
 
 .it2 {
   background: url("../img/6_team/2.jpg");
   width: 370px;
   height: 440px;
+  margin: 0 10px 10px 10px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -1195,6 +1227,7 @@ textarea {
   background: url("../img/6_team/3.jpg");
   width: 370px;
   height: 440px;
+  margin-bottom: 10px;
 }
 
 .it4 {
@@ -1207,6 +1240,7 @@ textarea {
   background: url("../img/6_team/5.jpg");
   width: 370px;
   height: 440px;
+  margin: 0 10px 0 10px;
 }
 
 .it6 {
@@ -1329,10 +1363,10 @@ textarea {
   transition: 0.2s;
   margin-right: 5px;
 }
-.click__autor .dot .dot_active {
+.click__autor .dot:hover {
   background: #71f6eb;
 }
-.click__autor .dot:hover {
+.click__autor .dot_active {
   background: #71f6eb;
 }
 

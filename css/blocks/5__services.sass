@@ -91,6 +91,8 @@
     margin-right: 1rem
     margin-bottom: 1rem
 
+    transition-duration: .5s
+
     h3
         font-family: 'Merriweather'
         font-weight: 700
@@ -115,10 +117,12 @@
         color: #44948d
 
         cursor: pointer
-        transition: .2s
 
-        &:hover
-            color: #31706b
+    &:hover
+        background: #2241c7
+        h3, p, i
+            color: #ffffff
+
 
 .ser_item_2
     background: #646464  url('../img/5_services/2.jpg')
